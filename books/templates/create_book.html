@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Create Book</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'books/css/styles1.css' %}">
+</head>
+<body>
+    <h1>Create Book</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Book</button>
+    </form>
+    <a href="{% url 'book_list' %}">Back to Book List</a>
+</body>
+</html>
