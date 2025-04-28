@@ -11,7 +11,7 @@ def create_book(request):
             return redirect('book_list')
     else:
         form = BookForm()
-    return render(request, 'create_book.html', {'form': form})
+        return render(request, 'create_book.html', {'form': form})
 
 # Read
 def book_list(request):
@@ -55,7 +55,5 @@ def delete_book(request, pk):
 # Related Model Query	author.books.all()
 # Update Record	book.save()
 # Delete Record	book.delete()
-
-
 
 
