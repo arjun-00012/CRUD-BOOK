@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-41w67xz7p)p4d_!0fmeyjnas4_rdij1t(sh!8*ge+x#+u0478e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['book_project.onrender.com']
+ALLOWED_HOSTS = ['crud-book-1.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
